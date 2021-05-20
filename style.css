@@ -55,13 +55,11 @@ body {
 }
 
 
-#waves main {
+section main{
 
-	background-color: #0f4c75;
 	margin: 20px 0;
 	padding: 48px 48px;
-	  box-shadow: 4px 3px 8px 1px #3282b8;
-  	-webkit-box-shadow: 4px 3px 8px 1px #3282b8;
+	text-align: center;
 }
 aside {
 	position: absolute;
@@ -167,6 +165,125 @@ th, td{
 	width: 60px;
 	margin: 12px 0;
 }
+.artwork-img{
+	width: 480px; 
+	height: 480px;
+}
+
 th {
 		background-color: #55608f;
+}
+
+
+.list-header, h2 {
+	border-bottom: 2px solid #fff;
+	margin-bottom: 10px;
+	margin: 48px 48px;
+	padding: 16px 16px;
+	font-size: 48px;
+	font-family: 'Caveat';
+
+}
+
+ul, ol, menu {
+	position: relative;
+	text-align: center;
+}
+
+ul li, ol li, menu li{
+
+	position: relative;
+	list-style: none;
+	display: table;
+	margin: 10px 0;
+	padding-left: 34px;
+	padding-right: 5px;
+}
+
+
+ul li p, ol li p, menu li p{
+
+	position: relative;
+	z-index: 10;
+	padding: 3px 16px;
+}
+
+
+ul li::before, ol li::before, menu li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 36px;
+	height: 36px;
+	border-radius: 36px;
+	background: transparent;
+	border: 2px solid #03a9f4;
+	transition: background 0.5s, width 0.5s;
+	transition-delay: 0.5s 0s;
+}
+
+ul li:hover::before, ol li:hover::before, menu li:hover::before {
+	width: 100%;
+	background:  #03a9f4;
+	transition-delay: 0s, 0.5s;
+}
+
+ul li::after, ol li::after, menu li::after {
+
+	content: '';
+	position: absolute;
+	 top: 14px;
+	 left: 14px;
+	 width: 6px;
+	 height: 6px;
+	 border-top: 2px solid #fff;
+	 border-right: 2px solid #fff;
+	 transform: rotate(45deg);
+	 transition: 0.5s;
+	 transition-delay: 0s;
+}
+
+
+ul li:hover::after, ol li:hover::after, menu li:hover::after {
+	transform: rotate(45deg) scale(1.5);
+	transition-delay: 0.5s;
+	left: 18px;
+}
+
+
+
+#about-waves h2, h4{
+	padding: 24px 0;
+	font-size: 48px;
+	font-family: 'Caveat';
+}
+
+
+mark {
+  background-color: #32407b;
+  color: #fff;
+}
+
+
+#about-waves p, #achievements blockquote{
+	margin: 48px 48px;
+	line-height: 2;
+}
+
+.achievements-text {
+	padding: 48px 48px;
+}
+
+
+footer a {
+			color: #fff;
+	font-size: 16px;	
+	padding: 28px 0;
+	text-decoration: none;
+}
+
+footer strong{
+	font-size: 24px;	
+	padding: 28px 0;
 }

@@ -9,7 +9,7 @@ const form = document.querySelector('form');
 	let contactFormData = localStorage.getItem('contactFormData');
 
 	if (contactFormData && contactFormData !== "" && contactFormData !== "{}"){
-		form.innerHTML = 'Your details have been successfully submitted! We will get back at you shortly'
+		form.innerHTML = '<p style="padding: 48px 48px;">Your details have been successfully submitted! We will get back at you shortly</p>'
 	}
 
 
