@@ -21,50 +21,160 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth !important;
 	font-family: 'Newsreader', serif;
+
 }
 
 
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width:520px){
 	#waves-main h1 {
-	font-size: 48px;
+	font-size: 56px;
 	width: 30%;
 	  text-shadow: 2px 2px 5px #000;
 	  font-family: 'Caveat';
 	margin: 24px 24px;
 	}
-
-}
-
-
-@media screen and (min-width: 420px){
-	#waves-main h1 {
-	font-size: 96px;
-	width: 30%;
-	  text-shadow: 2px 2px 5px #000;
-	  font-family: 'Caveat';
-	margin: 24px 24px;
-	}
-
-}
-
-
-
-body {
-	background-color: #1b262c;
-	color: #fff;
-}
-
-#waves-main {
+	#waves-main {
 	background-image: url(media/waves.jpg);
-	background-size: 64% 100%;
+	background-size: 100% 100vh;
 	  background-repeat: no-repeat;
 	height: 100vh;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
 
+	}
+	aside {
+	 font-family: 'Caveat';
+	 font-size: 24px;
+	 text-align: center;
+	 margin-top: 64px;
+	}
+
+	#navigator{
+		display: none;
+	}
+
+	#mob-nav{
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		transition: 0.5s;
+	}
+
+	#mob-nav #mob-links{
+		display: none;
+		transition: 0.5s;
+	}
+
+	#mob-nav a{
+		text-decoration: none;
+		color: white;
+		padding: 14px 16px;
+		font-size: 16px;
+		display: block;
+		background-color: #0c2145;
+	}
+	#mob-nav a:hover{
+		background-color: #19428a;
+	}
+	#mob-nav .active{
+		background-color: #0c2145;
+			width: 100%;
+	}
+	.spotify-iframe{
+		height: 380px;
+		width: 80%;
+	
+	}
+
+
+}
+
+
+@media screen and (min-width: 520px){
+	#waves-main h1 {
+	font-size: 84px;
+	width: 30%;
+	  text-shadow: 2px 2px 5px #000;
+	  font-family: 'Caveat';
+	margin: 24px 24px;
+	}
+	#waves-main {
+	background-image: url(media/waves.jpg);
+	background-size: 64% 100vh;
+
+	  background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+
+	}
+	aside {
+	position: absolute;
+	right: 0;
+	 font-family: 'Caveat';
+	 font-size: 24px;
+	 text-align: center;
+	 bottom: 0;
+	 max-width: 36%;
+	 height: 100vh;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: flex-end;
+	}
+	#mob-nav{
+		display: none;
+	}
+
+	#navigator {
+
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-color: rgba(15,76,117, .8);
+
+		  top: 0;
+		  position: fixed;
+		  width: 100%;
+		  transition: 0.5s;
+		  z-index: 1;
+
+	}
+
+
+
+
+	#navigator  a {
+		color: #bbe1fa;
+		font-size: 14px;	
+		padding: 16px 0;
+		width: 100%;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .5s;
+	}
+
+	#navigator a:hover {
+		color: 	#fff;
+		background-color: #3282b8;
+
+	}
+	.spotify-iframe{
+	height: 380px;
+	width: 32vw;
+	
+	}
+}
+
+body {
+	background-color: #1b262c;
+	color: #fff;
 }
 
 
@@ -79,59 +189,21 @@ body {
 
 section main{
 
-	padding: 24px 24px;
+	padding: 8px 24px;
 	text-align: center;
-}
-aside {
-	position: absolute;
-	right: 48px;
-	 font-family: 'Caveat';
-	 font-size: 24px;
-	 text-align: center;
-	 top: 80px;
 }
 aside h3,p {
 	margin: 12px 0;
 }
 
 
-
-nav {
-
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	background-color: rgba(15,76,117, .8);
-
-	  top: 0;
-	  position: fixed;
-	  width: 100%;
-	  transition: 0.5s;
-	  z-index: 1;
-
+.youtube-iframe{
+	height: 320px;
+	width:480px;
 }
 
 
 
-nav.fixed-nav {
- 	background-color: rgba(0,0,0,0);
-}
-
-nav  a {
-	color: #bbe1fa;
-	font-size: 16px;	
-	padding: 24px 0;
-	width: 100%;
-	text-decoration: none;
-	transition: .5s;
-}
-
-nav a:hover {
-	color: 	#fff;
-	background-color: #3282b8;
-
-}
 td > figure {
 	display: flex;
 	align-items: center;
@@ -228,7 +300,14 @@ iframe{
 	width: 100%;
 	font-size: 48px;
 	font-family: 'Caveat';
+	padding: 12px 0;
 
+}
+
+#spotify-iframe-container{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 ul, ol, menu {
@@ -246,6 +325,7 @@ ul li, ol li, menu li{
 	margin: 16px 0;
 	padding-left: 34px;
 	padding-right: 5px;
+	max-width: 100%;
 
 }
 
@@ -256,6 +336,7 @@ ul li span, ol li span, menu li span{
 	z-index: 10;
 	padding: 3px 16px;
 	margin-top: 6px;
+
 }
 
 
@@ -308,13 +389,12 @@ mark {
 
 
 
-#about-waves h2, h4{
-	padding: 12px 0;
-	font-size: 48px;
+ h4{
+ 	padding: 12px 0;
+	font-size: 32px;
 	font-family: 'Caveat';
-}
 
-
+ }
 
 #about-waves p, #achievements blockquote{
 	margin: 24px 24px;
@@ -358,7 +438,8 @@ footer strong{
 #contactForm button {
 	padding: 8px 8px;
 	border-radius: 18px;
-	margin: 12px 0;
+	margin-top: 12px;
+	margin-bottom: 48px;
 	background-color: #353c51;
 	color: white;
 	border-color: #767d92;

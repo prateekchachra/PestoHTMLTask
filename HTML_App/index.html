@@ -32,38 +32,49 @@
 
 			<header>
 				<nav id="navigator">
-					<!-- To upper case from CSS -->
-					<a href="#waves">WAVES OF PARAMNESIA</a>
-					<a href="#about-waves">ABOUT THE ALBUM</a>
-					<a href="#prev-albums">ALL WORKS BY DARZINI</a>
-					<a href="#regrets">REGRETS AND GRIEVANCES</a>
-					<a href="#achievements">ACHIEVEMENTS</a>
-					<a href="#about-darzini">ABOUT DARZINI</a>
+				
+					<a href="#waves">Waves Of Paramnesia</a>
+					<a href="#about-waves">About The Album</a>
+					<a href="#prev-albums">All Works By Darzini</a>
+					<a href="#regrets">Regrets And Grievances</a>
+					<a href="#achievements">Achievements</a>
+					<a href="#about-darzini">About Darzini</a>
 				</nav>
-
+				<nav id="mob-nav">
+						<a href="#waves" class="active">Waves Of Paramnesia</a>
+						<div id="mob-links">
+							<a href="#about-waves">About The Album</a>
+							<a href="#prev-albums">All Works By Darzini</a>
+							<a href="#regrets">Regrets And Grievances</a>
+							<a href="#achievements">Achievements</a>
+							<a href="#about-darzini">About Darzini</a>
+						</div>
+						<a href="javascript:void(0);" class="icon" onclick="onMobileNavClick()">
+					    	<i class="fa fa-bars"></i>
+						</a>
+				</nav>
 			</header>
 
 			<section id="waves-main" aria-label="Darzini Spotify and Music">
-				<aside>
-					<p>A Peak into the signature Darzini Sound:</p>
-					<audio controls>
-						<source src="media/yeintehaan.mp3" />
-					</audio>
-					<h3>Listen to Darzini on Spotify</h3>
-					
-					<div class="iframe-container">
-						<iframe src="https://open.spotify.com/embed/artist/46erpDvrtJP65LlxdXjktW" width="300" height="380" frameborder="0" 
-						allowtransparency="true" allow="encrypted-media">
-						</iframe>
-					</div>
 
-				</aside>
-			
 				<h1>Waves Of Paramnesia</h1>
 				<p>The Latest in the works by Darzini</p>
 
 			</section>
+			<aside>
+				<p>A Peak into the signature Darzini Sound:</p>
+				<audio controls>
+					<source src="media/yeintehaan.mp3" />
+				</audio>
+				<h3>Listen to Darzini on Spotify</h3>
+				
+				<div class="iframe-container" id="spotify-iframe-container">
+					<iframe src="https://open.spotify.com/embed/artist/46erpDvrtJP65LlxdXjktW" class="spotify-iframe" frameborder="0" 
+					allowtransparency="true" allow="encrypted-media">
+					</iframe>
+				</div>
 
+			</aside>
 			<section id="waves" aria-label="About Waves Of Paramnesia - The Album">
 				<main>
 					<h2 class="list-header">What is in this album?</h2>
@@ -112,7 +123,7 @@
 					</p>
 					<div class="iframe-container">
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/SVfSK7u-3P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/SVfSK7u-3P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 					</div>
@@ -125,7 +136,7 @@
 						<mark>This track was the <i>first ones</i> to reach over 100 views on YouTube on its first day of release</mark>
 					</p>
 					<div class="iframe-container">
-						<iframe width="480" height="320" src="https://www.youtube.com/embed/xasR8wyvNLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						<iframe class="youtube-iframe" src="https://www.youtube.com/embed/xasR8wyvNLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 				</article>
@@ -138,7 +149,7 @@
 
 					</p>
 					<div class="iframe-container">
-						<iframe width="480" height="320" src="https://www.youtube.com/embed/rRgdCcbpBJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						<iframe class="youtube-iframe" src="https://www.youtube.com/embed/rRgdCcbpBJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 				</article>
@@ -150,7 +161,7 @@
 						<mark>This track was <strong>written on a live stream on YouTube</strong></mark>
 					</p>
 					<div class="iframe-container">
-						<iframe width="480" height="320" src="https://www.youtube.com/embed/lcTWKB-baMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						<iframe class="youtube-iframe" src="https://www.youtube.com/embed/lcTWKB-baMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 						</iframe>
 					</div>
 				</article>
@@ -164,7 +175,7 @@
 						<mark>The melody for this track came <strong>right after a karaoke night</strong></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/Yv0aJ7PQe1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/Yv0aJ7PQe1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
@@ -178,7 +189,7 @@
 						<mark>The music for this track was created 5 years back and was <strong>remixed and remastered with vocals</strong></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/GSJSpiRCoFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/GSJSpiRCoFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
@@ -190,7 +201,7 @@
 						<mark>This song stands at the <strong>highest number of views among all</strong> <i>(basically it was spammed the most over the post-release excitement)</i></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/4C49p67ujIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/4C49p67ujIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
@@ -203,7 +214,7 @@
 						<mark>This song was the <strong>first one to be released from the album</strong></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/zkdX3AuKyV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/zkdX3AuKyV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
@@ -215,7 +226,7 @@
 						<mark>This song was the <strong>first offical track by Darzini to have vocal chops as a major element</strong></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/TQ4jtzCHMMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/TQ4jtzCHMMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
@@ -228,7 +239,7 @@
 						<mark>This song was the <strong>final one to be made or released. Yes. there's nothing else that's interesting for this one. Sorry.</strong></mark>
 					</p>
 						<div class="iframe-container">
-							<iframe width="480" height="320" src="https://www.youtube.com/embed/1EY5kDIh3Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							<iframe class="youtube-iframe" src="https://www.youtube.com/embed/1EY5kDIh3Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
 						</div>
 				</article>
