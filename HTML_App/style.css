@@ -59,43 +59,56 @@ body {
 		position: fixed;
 		top: 0;
 		width: 100%;
+		 z-index: 12;
 		transition: 0.5s;
+		background-color: #222222;
 	}
 
 	#mob-nav #mob-links{
 		  list-style: none;
 		  position: fixed;
-		  top: 0;
-		  left: 0;
-		  width: 80%;
-		  height: 100vh;
-		  background-color: #222222;
-		  padding: 4.4rem;
+		  top: 50px;
+		  left: -100%;
+		  width: 100%;
+		  height: calc(100vh - 50px);
 		  display: flex;
+		  border-bottom: 2px solid #fff;
 		  flex-direction: column;
 		  justify-content: space-around;
-		  z-index: 1250;
-		  text-transform: uppercase;
-		  transform: translateX(-100%);
-		  transition: transform 0.5s;
+		  z-index: 12;
+		  transition: 0.5s;
+
+		background-color: #222222;
 	}
 
-	#mob-nav a{
+	#mob-nav #mob-links.active{
+		left:0;
+		 z-index: 12;
+		transition: 0.5s;
+	}
+	#mob-links a{
 		text-decoration: none;
 		color: white;
-		padding: 14px 16px;
-		font-size: 16px;
+		font-size: 18px;
+		 z-index: 12;
 		display: block;
-		background-color: #0c2145;
+		margin-left: 36px;
+		width: max-content;
 	}
-	#mob-nav a:hover{
-		background-color: #19428a;
+
+	#mob-links a:active{
 		border-bottom: 3px solid #fff;
 	}
-	#mob-nav .mob-header{
-		background-color: #0c2145;
-			width: 100%;
+	#nav-icon{
+		text-decoration: none;
+		color: white;
+		padding: 14px;
+		font-size: 16px;
+		display: block;
+		height: 50px;
+		border-bottom: 3px solid #fff;
 	}
+
 	.spotify-iframe{
 		height: 380px;
 		width: 80%;
@@ -320,7 +333,7 @@ iframe{
 .list-header, h2 {
 	border-bottom: 2px solid #fff;
 	margin: 24px auto;
-	width: max-content;
+	max-width: max-content;
 	text-align: center;
 
 	font-size: 48px;

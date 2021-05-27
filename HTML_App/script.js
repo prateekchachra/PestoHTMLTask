@@ -125,14 +125,13 @@ function renderAlbumDetails(data){
 
 
 function onMobileNavClick(){
-	let mobileLinksElement = document.getElementById("mob-links");
-	  if (mobileLinksElement.style.display === "block") {
-	    mobileLinksElement.style.display = "none";
-	  } else {
-	    mobileLinksElement.style.display = "block";
-	  }
+	$('#mob-links').toggleClass('active');
 }
 
+$('.mob-nav-link').on('click', function(e){
+	onMobileNavClick();
+
+})
 
 let contactFormData = localStorage.getItem('contactFormData');
 
