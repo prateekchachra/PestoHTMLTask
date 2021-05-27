@@ -97,7 +97,7 @@ $.getJSON('data/regretsandgrievances.json', (data) => {
 
 function renderAlbumDetails(data){
 	let headerElement = $("<h2>").html(data.title);
-	let artworkElement = data.artwork ? $("<img>").attr("src", data.artwork).addClass("artwork-img") : "";
+	let artworkElement = data.artwork ? $("<img>").attr("src", data.artwork).attr("alt",data.title).addClass("artwork-img") : "";
 
 	let detailsListHeader = $("<p>").addClass("list-header").html("What is in this album?")
 	let detailsList = $("<ul>");
