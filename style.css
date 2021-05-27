@@ -23,6 +23,34 @@ body {
 	font-family: 'Newsreader', serif;
 }
 
+
+
+
+@media screen and (max-width: 420px){
+	#waves-main h1 {
+	font-size: 48px;
+	width: 30%;
+	  text-shadow: 2px 2px 5px #000;
+	  font-family: 'Caveat';
+	margin: 24px 24px;
+	}
+
+}
+
+
+@media screen and (min-width: 420px){
+	#waves-main h1 {
+	font-size: 96px;
+	width: 30%;
+	  text-shadow: 2px 2px 5px #000;
+	  font-family: 'Caveat';
+	margin: 24px 24px;
+	}
+
+}
+
+
+
 body {
 	background-color: #1b262c;
 	color: #fff;
@@ -39,13 +67,7 @@ body {
 
 }
 
-#waves-main h1 {
-	font-size: 96px;
-	width: 30%;
-	  text-shadow: 2px 2px 5px #000;
-	  font-family: 'Caveat';
-	margin: 24px 24px;
-}
+
 #waves-main > p {
 	font-size: 32px;
 	width: 30%;
@@ -57,8 +79,7 @@ body {
 
 section main{
 
-	margin: 20px 0;
-	padding: 48px 48px;
+	padding: 24px 24px;
 	text-align: center;
 }
 aside {
@@ -100,7 +121,7 @@ nav.fixed-nav {
 nav  a {
 	color: #bbe1fa;
 	font-size: 16px;	
-	padding: 28px 0;
+	padding: 24px 0;
 	width: 100%;
 	text-decoration: none;
 	transition: .5s;
@@ -137,15 +158,8 @@ footer, footer > form{
 		padding: 24px 24px;
 
 }
-#prev-albums a{
-		color: #fff;
-	font-size: 16px;	
-	padding: 28px 0;
-	width: 100%;
-	text-decoration: none;
 
-}
-table {
+#albums-table {
 	width: 80%;
 	border-collapse: collapse;
 	overflow: hidden;
@@ -155,31 +169,63 @@ table {
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 	  border: 1px solid rgba(255,255,255,0.3);
 }
-th, td{
-	padding: 15px;
+#albums-table th, #albums-table td{
 	background-color : rgba(255,255,255,0.2);
 	  border: 1px solid rgba(255,255,255,0.3);
+}
+#albums-table th{
+	padding: 12px;
+	background-color: #55608f;
+}
+#albums-table a{
+		color: #fff;
+	font-size: 16px;	
+	padding: 4px 0;
+	width: 100%;
+	text-decoration: none;
+
+	transition: 0.5s;
+}
+
+#albums-table a:hover{
+
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+#albums-table td figcaption{
+	position: absolute;
+	font-size: 8px;
+	background-color: rgba(0, 0, 0, 0.6);
+  width: 55px;
+  bottom: 0;
+  z-index: 1;
+}
+#albums-table td figure{
+	margin: 8px 0;
+	position: relative;
 }
 .album-art-img {
 	height: 60px;
 	width: 60px;
-	margin: 12px 0;
 }
 .artwork-img{
 	width: 480px; 
 	height: 480px;
+	max-width: 100%;
 }
 
-th {
-		background-color: #55608f;
+iframe{
+	max-width: 100%;
 }
 
 
 .list-header, h2 {
 	border-bottom: 2px solid #fff;
-	margin-bottom: 10px;
-	margin: 48px 48px;
-	padding: 16px 16px;
+	margin: 24px 0;
+	width: 100%;
 	font-size: 48px;
 	font-family: 'Caveat';
 
@@ -194,18 +240,22 @@ ul li, ol li, menu li{
 
 	position: relative;
 	list-style: none;
-	display: table;
-	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	width: max-content;
+	margin: 16px 0;
 	padding-left: 34px;
 	padding-right: 5px;
+
 }
 
 
-ul li p, ol li p, menu li p{
+ul li span, ol li span, menu li span{
 
 	position: relative;
 	z-index: 10;
 	padding: 3px 16px;
+	margin-top: 6px;
 }
 
 
@@ -251,28 +301,32 @@ ul li:hover::after, ol li:hover::after, menu li:hover::after {
 	left: 18px;
 }
 
-
-
-#about-waves h2, h4{
-	padding: 24px 0;
-	font-size: 48px;
-	font-family: 'Caveat';
-}
-
-
 mark {
   background-color: #32407b;
   color: #fff;
 }
 
 
+
+#about-waves h2, h4{
+	padding: 12px 0;
+	font-size: 48px;
+	font-family: 'Caveat';
+}
+
+
+
 #about-waves p, #achievements blockquote{
-	margin: 48px 48px;
+	margin: 24px 24px;
 	line-height: 2;
+}
+#about-waves article {
+	margin: 24px 0;
 }
 
 .achievements-text {
-	padding: 48px 48px;
+	margin-top: 36px;
+	margin-bottom: 12px;
 }
 
 
@@ -286,4 +340,36 @@ footer a {
 footer strong{
 	font-size: 24px;	
 	padding: 28px 0;
+}
+
+
+#contactForm legend {
+	margin-top: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#contactForm input, textarea, select, button{
+	width: 100%;
+	padding: 8px 8px;
+	border-radius: 6px;
+	margin: 4px 0;
+}
+
+#contactForm button {
+	padding: 8px 8px;
+	border-radius: 18px;
+	margin: 12px 0;
+	background-color: #353c51;
+	color: white;
+	border-color: #767d92;
+	border-width: 3px;
+}
+
+#contactForm label {
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+.video-container, video {
+	max-width: 100%;
 }

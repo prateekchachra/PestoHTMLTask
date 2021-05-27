@@ -1,0 +1,58 @@
+[						
+	{
+		"title": "Lamha",
+		"type": "Single",
+		"year": "2020",
+		"numberOfSongs": "1",
+		"image": "https://i.scdn.co/image/ab67616d00001e020779a9d37a3ebf058763afe8",
+		"link": "https://open.spotify.com/album/4ULZhogCk9h4Q6OQOSa5Dd" 
+	},
+	{
+		"title": "Losing Myself",
+		"type": "Single",
+		"year": "2020",
+		"numberOfSongs": "1",
+		"image": "https://i.scdn.co/image/ab67616d00001e0247bf64cb5014eadd175f8672",
+		"link": "https://open.spotify.com/album/1M1ziCOglghUmepa0Acjdk"
+	},
+	{
+		"title": "Intrusive Thoughts",
+		"type": "Single",
+		"year": "2020",
+		"numberOfSongs": "1",
+		"image": "https://i.scdn.co/image/ab67616d00001e021fd61bd652fd11775082eaf4" ,
+		"link": "https://open.spotify.com/album/0XnNwyPFGsgnHCsxfG2tO1"
+	},
+	{
+		"title": "Regrets And Grievances",
+		"type": "Album",
+		"year": "2020",
+		"numberOfSongs": "11",
+		"image": "https://i.scdn.co/image/ab67616d00001e025279e8960008df32e07a61df",
+		"link": "https://open.spotify.com/album/65yGI0ZKG7NhDgFXNAeRiv"
+	},
+	{
+		"title": "Silence",
+		"type": "EP",
+		"year": "2019",
+		"numberOfSongs": "3",
+		"image": "https://i.scdn.co/image/ab67616d00001e02dc4920e96cea0bdff1233b22",
+		"link": "https://open.spotify.com/album/2jhS8I3Ddra6MVYvVnauVS"
+	},
+	{
+		"title": "Read Aloud",
+		"type": "EP",
+		"year": "2019",
+		"numberOfSongs": "3",
+		"image": "https://i.scdn.co/image/ab67616d00001e0256874baedf448e5256222a1a",
+		"link": "https://open.spotify.com/album/0LBVZloSZJ2XccGimcaG2p" 
+	},
+	{
+		"title": "Melody",
+		"type": "EP",
+		"year": "2019",
+		"numberOfSongs": "2",
+		"image": "https://i.scdn.co/image/ab67616d00001e021b54156b518ed0ea97c497db",
+		"link": "https://open.spotify.com/album/5Bl88NJIjRhBJgfRgKkQsi"
+	}
+]
