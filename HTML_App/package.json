@@ -1,0 +1,19 @@
+{
+  "name": "waves_html",
+  "version": "1.0.0",
+  "description": "HTML Application created in Basic HTML and Node.JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "keywords": [
+    "wavesofparamnesia"
+  ],
+  "author": "Prateek Chachra",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

@@ -24,9 +24,6 @@ body {
 
 }
 
-
-
-
 @media screen and (max-width:520px){
 	#waves-main h1 {
 	font-size: 56px;
@@ -66,8 +63,21 @@ body {
 	}
 
 	#mob-nav #mob-links{
-		display: none;
-		transition: 0.5s;
+		  list-style: none;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 80%;
+		  height: 100vh;
+		  background-color: #222222;
+		  padding: 4.4rem;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-around;
+		  z-index: 1250;
+		  text-transform: uppercase;
+		  transform: translateX(-100%);
+		  transition: transform 0.5s;
 	}
 
 	#mob-nav a{
@@ -80,8 +90,9 @@ body {
 	}
 	#mob-nav a:hover{
 		background-color: #19428a;
+		border-bottom: 3px solid #fff;
 	}
-	#mob-nav .active{
+	#mob-nav .mob-header{
 		background-color: #0c2145;
 			width: 100%;
 	}
@@ -165,6 +176,9 @@ body {
 		background-color: #3282b8;
 
 	}
+
+
+	
 	.spotify-iframe{
 	height: 380px;
 	width: 32vw;
@@ -177,7 +191,9 @@ body {
 	color: #fff;
 }
 
-
+a:active{
+		border-bottom: 2px solid #1b262c;
+	}
 #waves-main > p {
 	font-size: 32px;
 	width: 30%;
@@ -210,6 +226,7 @@ td > figure {
 	flex-direction: column;
 
 }
+
 
 
 footer, footer > form{
@@ -249,6 +266,12 @@ footer, footer > form{
 	padding: 12px;
 	background-color: #55608f;
 }
+#albums-table tr:nth-child(even){
+	background-color : rgba(255,255,255,0.3);
+	  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
 #albums-table a{
 		color: #fff;
 	font-size: 16px;	
@@ -296,13 +319,16 @@ iframe{
 
 .list-header, h2 {
 	border-bottom: 2px solid #fff;
-	margin: 24px 0;
-	width: 100%;
+	margin: 24px auto;
+	width: max-content;
+	text-align: center;
+
 	font-size: 48px;
 	font-family: 'Caveat';
 	padding: 12px 0;
 
 }
+
 
 #spotify-iframe-container{
 	display: flex;
@@ -382,14 +408,24 @@ ul li:hover::after, ol li:hover::after, menu li:hover::after {
 	left: 18px;
 }
 
-mark {
+.mark {
   background-color: #32407b;
   color: #fff;
 }
 
+.bold{
+	font-weight: 700;
+}
 
+.bold-light{
+	font-weight: 600;
+}
 
- h4{
+.italic{
+	font-style: italic;
+}
+
+h4{
  	padding: 12px 0;
 	font-size: 32px;
 	font-family: 'Caveat';
@@ -422,6 +458,10 @@ footer strong{
 	padding: 28px 0;
 }
 
+#contactForm {
+	width: 64%;
+}
+
 
 #contactForm legend {
 	margin-top: 8px;
@@ -433,6 +473,7 @@ footer strong{
 	padding: 8px 8px;
 	border-radius: 6px;
 	margin: 4px 0;
+	transition: 0.5s;
 }
 
 #contactForm button {
@@ -444,6 +485,14 @@ footer strong{
 	color: white;
 	border-color: #767d92;
 	border-width: 3px;
+	font-size: 18px;
+	height: 50px;
+}
+
+
+#contactForm button:hover{
+	font-size: 20px;
+	font-weight: 700;
 }
 
 #contactForm label {
@@ -453,4 +502,24 @@ footer strong{
 
 .video-container, video {
 	max-width: 100%;
+}
+
+
+
+p.achievements-text::first-letter {
+	font-family: caveat;
+	font-size: 18px;
+}
+
+::selection{
+	color: white;
+	background: #121212;
+}
+
+
+input:focus, textarea:focus, input:hover, textarea:hover {
+	border-color: green;
+	font-weight: 700;
+	transition: 0.5s;
+
 }
