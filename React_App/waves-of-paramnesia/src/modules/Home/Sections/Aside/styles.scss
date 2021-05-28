@@ -1,0 +1,35 @@
+@media screen and (max-width:520px){
+    aside {
+        font-family: 'Caveat';
+        font-size: 24px;
+        text-align: center;
+        margin-top: 64px;
+   }
+}
+
+@media screen and (min-width: 520px){
+
+    aside {
+        position: absolute;
+        right: 0;
+         font-family: 'Caveat';
+         font-size: 24px;
+         text-align: center;
+         bottom: 0;
+         max-width: 36%;
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+    }
+}
+
+.spotify-iframe{
+	height: 380px;
+	width: 32vw;
+}
+
+aside h3, aside p {
+	margin: 12px 0;
+}
+

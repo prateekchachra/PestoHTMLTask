@@ -1,13 +1,30 @@
 * {
-  margin: 0;
-  padding: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth !important;
+	
+
 }
 
 body {
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+	background-color: #1b262c; //Needs to be imported from variables.scss
+	color: #fff;
+  font-family: 'Newsreader', serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2 {
+	border-bottom: 2px solid #fff;
+	margin: 24px auto;
+	max-width: max-content;
+	text-align: center;
+
+	font-size: 48px;
+	font-family: 'Caveat';
+	padding: 12px 0;
+
 }
