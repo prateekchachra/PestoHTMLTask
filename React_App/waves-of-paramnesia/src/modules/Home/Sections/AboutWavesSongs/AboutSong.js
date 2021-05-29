@@ -21,8 +21,8 @@ export default function AboutSong({song}) {
     return (
         <article>
              <h4>{title}</h4>
-            <YouTubeIFrame youtubeLink={youtubeLink} title={title}/>
             <Description description={description}/>
+            <YouTubeIFrame youtubeLink={youtubeLink} title={title}/>
         </article>
     )
 }

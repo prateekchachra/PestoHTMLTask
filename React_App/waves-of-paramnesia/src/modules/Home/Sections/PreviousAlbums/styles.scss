@@ -51,6 +51,9 @@
 #albums-table td figure{
 	margin: 8px 0;
 	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 #prev-albums {
