@@ -1,4 +1,5 @@
 const regex = {
+  name: new RegExp('^[a-zA-Z ]+$'),
   email: new RegExp(
     '^(([^<>()\\[\\]\\\\.,;:\\s@]+(\\.[^<>()\\[\\]\\\\.,;:\\s@]+)*)|(.+))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$',
   ),
@@ -16,6 +17,13 @@ export class Validators {
   static email(value, message) {
     if (value) {
       const result = regex.email.test(value);
+      if (!result) return { error: true, message };
+    }
+    // return false;
+  }
+  static name(value, message) {
+    if (value) {
+      const result = regex.name.test(value);
       if (!result) return { error: true, message };
     }
     // return false;

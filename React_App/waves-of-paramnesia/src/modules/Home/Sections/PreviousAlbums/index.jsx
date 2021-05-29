@@ -39,7 +39,6 @@ export default function PreviousAlbums() {
                 <tbody>
                   {albumsData.map((item,index) => {
                       const {title, type, year, numberOfSongs, image, link} = item;
-                      console.log(item)
                      return  (
                       <tr key={index.toString()}>
                           <td>{title}</td>
