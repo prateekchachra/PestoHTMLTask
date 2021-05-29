@@ -1,0 +1,19 @@
+#achievements .video-container, #achievements video {
+	max-width: 100%;
+}
+
+#achievements .achievements-text {
+	margin-top: 36px;
+	margin-bottom: 12px;
+}
+
+#achievements blockquote{
+	margin: 24px 24px;
+	line-height: 2;
+}
+
+#achievements p.achievements-text::first-letter {
+	font-family: caveat;
+	font-size: 18px;
+}
+

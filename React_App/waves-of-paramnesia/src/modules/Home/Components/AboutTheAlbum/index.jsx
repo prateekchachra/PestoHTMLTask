@@ -12,12 +12,12 @@ const Artwork = ({artworkLink, title}) => (
 )
 
 
-export default function AboutTheAlbum({aboutData = {}}) {
+export default function AboutTheAlbum({aboutData = {}, showTitle = false}) {
 
     const {title, artwork, inThisAlbum, mustListen, songsInAlbum} = aboutData;
     return ( 
         <main>
-          {title ? <SectionHeader title={title}/> : null}
+          {title & showTitle ? <SectionHeader title={title}/> : null}
           {artwork ? <Artwork artworkLink={artwork} alt={title} /> : null}
           <List list={inThisAlbum} label={contentConstants.DETAILS_LIST_HEADER}/>
           <List list={mustListen} label={contentConstants.MUST_LISTEN_LIST_HEADER}/>

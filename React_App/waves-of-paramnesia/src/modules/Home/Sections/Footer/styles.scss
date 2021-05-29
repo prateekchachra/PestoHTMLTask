@@ -1,0 +1,79 @@
+footer, footer > form{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+footer a {
+    color: #fff;
+    font-size: 16px;	
+    padding: 28px 0;
+    text-decoration: none;
+}
+
+footer .fa-phone {
+	color: '#a0a0a0'
+}
+
+footer .fa-whatsapp{
+	color: #128c7e;
+}
+
+footer .footer-submitted{
+	padding: 48px 48px;
+}
+footer strong{
+    font-size: 24px;	
+    padding: 28px 0;
+}
+
+#contactForm {
+	width: 64%;
+}
+
+
+#contactForm legend {
+	margin-top: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#contactForm input, textarea, select, button{
+	width: 100%;
+	padding: 8px 8px;
+	border-radius: 6px;
+	margin: 4px 0;
+	transition: 0.5s;
+}
+
+#contactForm button {
+	padding: 8px 8px;
+	border-radius: 18px;
+	margin-top: 12px;
+	margin-bottom: 48px;
+	background-color: #353c51;
+	color: white;
+	border-color: #767d92;
+	border-width: 3px;
+	font-size: 18px;
+	height: 50px;
+}
+
+
+#contactForm button:hover{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#contactForm label {
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+
+input:focus, textarea:focus, input:hover, textarea:hover {
+	border-color: green;
+	font-weight: 700;
+	transition: 0.5s;
+
+}

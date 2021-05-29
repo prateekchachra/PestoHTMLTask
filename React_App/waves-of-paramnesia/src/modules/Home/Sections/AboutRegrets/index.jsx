@@ -6,7 +6,7 @@ import aboutRegretsData from '../../../../resources/seed/regretsandgrievances.js
 export default function AboutRegrets() {
     return (
         <section id="regrets" aria-label="Regrets and Grievances">
-            <AboutTheAlbum aboutData={aboutRegretsData}/>
+            <AboutTheAlbum showTitle aboutData={aboutRegretsData}/>
         </section>
     )
 }
