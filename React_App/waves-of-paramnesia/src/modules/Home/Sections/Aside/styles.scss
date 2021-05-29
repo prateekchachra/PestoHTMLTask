@@ -5,6 +5,11 @@
         text-align: center;
         margin-top: 64px;
    }
+   .spotify-iframe{
+    height: 380px;
+    width: 80%;
+
+    }
 }
 
 @media screen and (min-width: 520px){
@@ -22,11 +27,12 @@
          flex-direction: column;
          justify-content: flex-end;
     }
-}
+    
+    .spotify-iframe{
+        height: 380px;
+        width: 32vw;
+    }
 
-.spotify-iframe{
-	height: 380px;
-	width: 32vw;
 }
 
 aside h3, aside p {
