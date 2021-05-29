@@ -1,0 +1,71 @@
+#albums-table {
+	width: 80%;
+	border-collapse: collapse;
+	overflow: hidden;
+	text-align: center;
+	 margin-left:auto; 
+    margin-right:auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	  border: 1px solid rgba(255,255,255,0.3);
+}
+#albums-table th, #albums-table td{
+	background-color : rgba(255,255,255,0.2);
+	  border: 1px solid rgba(255,255,255,0.3);
+}
+#albums-table th{
+	padding: 12px;
+	background-color: #55608f;
+}
+#albums-table tr:nth-child(even){
+	background-color : rgba(255,255,255,0.3);
+	  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+#albums-table a{
+		color: #fff;
+	font-size: 16px;	
+	padding: 4px 0;
+	width: 100%;
+	text-decoration: none;
+
+	transition: 0.5s;
+}
+
+#albums-table a:hover{
+
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+
+#albums-table figcaption{
+	position: absolute;
+	font-size: 8px;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 55px;
+	bottom: 0;
+	z-index: 1;
+}
+#albums-table td figure{
+	margin: 8px 0;
+	position: relative;
+}
+
+#prev-albums {
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	text-align: center;
+	padding: 48px 0;
+
+}
+#prev-albums h2{
+	font-size: 48px;
+	padding: 24px 24px;
+
+}
+
+.album-art-img {
+	height: 60px;
+	width: 60px;
+}

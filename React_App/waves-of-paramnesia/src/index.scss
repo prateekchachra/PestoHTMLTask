@@ -7,6 +7,10 @@
 
 }
 
+iframe{
+	max-width: 100%;
+}
+
 body {
 	background-color: #1b262c; //Needs to be imported from variables.scss
 	color: #fff;
@@ -17,14 +21,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-h2 {
-	border-bottom: 2px solid #fff;
-	margin: 24px auto;
-	max-width: max-content;
+
+section main{
+	padding: 8px 24px;
 	text-align: center;
-
-	font-size: 48px;
-	font-family: 'Caveat';
-	padding: 12px 0;
-
 }
